@@ -1,0 +1,27 @@
+body {
+  background-color: red;
+}
+
+.logo-adhmn {
+  width: 95px;
+  margin-left: 37px;
+}
+
+.under-construction {
+  margin-bottom: 0 !important;
+  text-align: center;
+  padding-left: 44% !important;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+.construction-content {
+  width: 170px;
+}
+.construction-content .flaticon-warning {
+  float: left;
+}
+
+/*# sourceMappingURL=app.css.map */
