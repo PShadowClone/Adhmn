@@ -21,6 +21,7 @@ class CreateAdminsTable extends Migration
             $table->string('password');
             $table->enum('is_active', [0, 1])->default(1);
             $table->unsignedBigInteger('country_id')->nullable();
+            $table->unsignedBigInteger('parent_id');
             $table->timestamps();
             $table->softDeletes();
         });

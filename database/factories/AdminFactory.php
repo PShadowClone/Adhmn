@@ -6,12 +6,15 @@ use App\Model;
 use Faker\Generator as Faker;
 
 $factory->define(\Core\Admin\Models\Admin::class, function (Faker $faker) {
+    $countryId = $faker->randomElement(getCountry());
+    $parentId = $faker->randomElement(getParent($countryId));
     return [
         'name' => $faker->name,
         'email' => $faker->email,
         'password' => bcrypt('123456'),
         'is_active' => $faker->randomElement(['0', '1']),
-        'country_id' => $faker->randomElement(getCountry())
+        'country_id' => $countryId,
+        'parent_id' => $parentId
     ];
 });
 
@@ -28,4 +31,25 @@ function getCountry()
         \Core\Country\Models\Country::all()->shuffle()->first()->id,
         null
     ];
+}
+
+/**
+ * get parent according to country id
+ *
+ * @param $countryId
+ * @return array
+ * @author Amr
+ */
+function getParent($countryId)
+{
+    try {
+        return [
+            \Core\Admin\Models\Admin::where(['country_id' => $countryId])->get()->shuffle()->first()->id,
+            null
+        ];
+    } catch (Exception $exception) {
+        return [
+            1
+        ];
+    }
 }

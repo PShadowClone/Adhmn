@@ -24,7 +24,7 @@ class ResponseServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Response::macro('api', function ($status, $message, $data = [],$error_code = 0,  $statusCode = 200) {
+        Response::macro('api', function ($status, $message, $data = [], $error_code = 0, $statusCode = 200) {
             return Response::make(['status' => $status, 'message' => $message, 'error_code' => $error_code, 'data' => $data], $statusCode,
                 ['Content-Type' => 'application/json']);                                       // the unified response for all Webservices @author Amr
         });

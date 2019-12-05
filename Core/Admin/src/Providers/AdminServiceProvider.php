@@ -2,6 +2,8 @@
 
 namespace Core\Admin\Providers;
 
+use Core\Admin\Interfaces\AdminInterface;
+use Core\Admin\Repository\AdminRepository;
 use Illuminate\Support\Facades\Route;
 use \Illuminate\Support\ServiceProvider;
 
@@ -14,25 +16,25 @@ class AdminServiceProvider extends ServiceProvider
     public function boot()
     {
         // publish package's routes
-        $this->loadRoutesFrom($this->routeBasePath.'web.php');
+        $this->loadRoutesFrom($this->routeBasePath . 'web.php');
         //public packages resources
         $this->loadViewsFrom(__DIR__ . '/../Resources/views', 'Admin');
         //public packages migrations
-         $this->loadMigrationsFrom(__DIR__.'/../Migrations');
-         // load package's translation files
-         $this->loadTranslationsFrom(__DIR__.'/../Resources/lang', 'Admin');
+        $this->loadMigrationsFrom(__DIR__ . '/../Migrations');
+        // load package's translation files
+        $this->loadTranslationsFrom(__DIR__ . '/../Resources/lang', 'Admin');
         // public package's configurations
         $this->publishes([
             __DIR__ . '/../Config/AdminConfig.php' => config_path('AdminConfig.php'),
         ]);
         // publish package's api routes
-         $this->mapApiRoutes();
+        $this->mapApiRoutes();
     }
 
 
     public function register()
     {
-
+        $this->app->singleton(AdminInterface::class, AdminRepository::class);           // bind AdminInterface with AdminRepository
     }
 
     /**
@@ -45,8 +47,8 @@ class AdminServiceProvider extends ServiceProvider
     protected function mapApiRoutes()
     {
         Route::prefix('api')
-             ->middleware('api')
-             ->group($this->routeBasePath.'api.php');
+            ->middleware('api')
+            ->group($this->routeBasePath . 'api.php');
     }
 
 }

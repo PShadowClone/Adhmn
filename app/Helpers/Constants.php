@@ -24,3 +24,21 @@ define('SUCCESS_RESPONSE', 200);
  * @author Amr
  */
 define('PAGINATED', 1);
+/**
+ * super_admin guard
+ *
+ * @author Amr
+ */
+define('SUPER_ADMIN', 'admin-api');
+/**
+ * all() query method
+ *
+ * @author Amr
+ */
+define('ALL_METHOD', 'all');
+/**
+ * get() query method
+ *
+ * @author Amr
+ */
+define('GET_METHOD', 'get');
