@@ -135,6 +135,7 @@ return [
     */
 
     'providers' => [
+        Core\Auth\Providers\AuthServiceProvider::class,
         Core\Country\Providers\CountryServiceProvider::class,
         Core\Admin\Providers\AdminServiceProvider::class,
 
@@ -177,6 +178,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Modulars\Package\ModularServiceProvider::class,
+        Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
+
         /**
          * custom api response
          *

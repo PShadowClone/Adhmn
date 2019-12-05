@@ -10,7 +10,7 @@ define('DEFAULT_PAGINATION', 15);
  *
  * @author Amr
  */
-define('ERROR_RESPONSE', 'error');
+define('ERROR_RESPONSE', 500);
 /**
  * this is the key of success
  * response
