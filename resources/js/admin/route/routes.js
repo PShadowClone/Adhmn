@@ -2,6 +2,7 @@ export const routes = [
     {
         path: '/admin',
         component: () => import('@/views/settings/index'),
+        meta: {layout: 'dashboard'},
         children: [
             {
                 path: 'settings/',
@@ -20,7 +21,15 @@ export const routes = [
                             }
                         ]
                     }
-                ]
+                ],
+
+
+            },
+            {
+                path: 'login',
+                name: 'login',
+                component: () => import('@/views/auth/signin'),
+                meta: {layout: 'auth'}
             }
         ]
     },

@@ -14,7 +14,12 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/admin/app.js', 'public/js')
     .js('resources/js/landing_page/app.js', 'public/js/landing_page')
-    .sass('resources/sass/app.scss', 'public/css');
+    .sass('resources/sass/app.scss', 'public/css')
+;
+
+// mix.options({extractVueStyles: true });
+
+
 /**
  *  create new alias
  *

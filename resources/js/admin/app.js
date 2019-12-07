@@ -1,4 +1,5 @@
 require('./bootstrap');
+require('./components/components');
 
 import Vue from 'vue'
 import router from './route/index'
@@ -12,7 +13,8 @@ Vue.component('App', App)
  * @author Amr
  */
 new Vue({
-    el: '#app',
+    // el: '#app',
     router,
-    template: `<App/>`
-});
+    render: h => h(App)
+    // template: `<App/>`
+}).$mount('#app');

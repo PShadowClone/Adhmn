@@ -1,24 +1,24 @@
 <template>
-    <div id="app">
-        <layout></layout>
+    <div id="app" v-cloak>
+        <component :is="layout"></component>
     </div>
+
 </template>
 <script>
-    import Layout from './template/layout'
+    import dashboardLayout from '@/template/dashboard/layout'
+    import authLayout from '@/template/auth/layout'
 
+    const defaultLayout = 'dashboard'
     export default {
         name: 'admin.app',
-        components: {Layout}
+        components: {dashboardLayout, authLayout},
+        computed: {
+            layout() {
+                let meta = this.$route.meta.layout;
+                if (meta == undefined)
+                    return;
+                return (this.$route.meta.layout || defaultLayout) + "-layout"
+            }
+        }
     }
 </script>
-<style>
-
-    @import "~/css/app.css";
-    @import "./assets/css/demo12/style.bundle.css";
-    @import "./assets/vendors/general/@fortawesome/fontawesome-free/css/all.min.css";
-    @import "./assets/vendors/custom/vendors/flaticon2/flaticon.css";
-    @import "./assets/vendors/custom/vendors/flaticon/flaticon.css";
-    @import "./assets/vendors/general/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.css";
-    @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Roboto:300,400,500,600,700";
-
-</style>

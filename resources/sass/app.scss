@@ -1,6 +1,6 @@
 
-body {
-  background-color: red;
+[v-cloak] {
+  display: none;
 }
 
 .logo-adhmn {
@@ -14,10 +14,6 @@ body {
   padding-left: 44% !important;
 }
 
-[v-cloak] {
-  display: none;
-}
-
 .construction-content {
   width: 170px;
 
@@ -25,3 +21,5 @@ body {
     float: left;
   }
 }
+
+

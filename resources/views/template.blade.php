@@ -1,17 +1,38 @@
 <!doctype html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>[v-cloak] {
+            display: none
+        }
+
+        [v-cloak] > * {
+            display: none
+        }
+
+        [v-cloak]::before {
+            content: "loading…"
+        }
+    </style>
+    <!-- START GOOGLE FONT -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Roboto:300,400,500,600,700">
+    <!-- END GOOGLE FONT -->
+    <!-- START THE STYLE OF TEMPLATE -->
+    <link rel="stylesheet" href="{{asset('assets/css/demo12/style.bundle.css')}}">
+    <!-- END THE STYLE OF TEMPLATE -->
     <!-- START STYLE @AUTHOR AMR -->
     <link href="{{mix('css/app.css')}}"/>
     <!-- END STYLE @AUTHOR AMR -->
-    <title>Document</title>
+    <title>{{config('app.name')}}</title>
 </head>
 <body>
-<div id="app">
+<div id="app" v-cloak>
+    <App></App>
 </div>
 <!-- START SCRIPTS LEVEL -->
 @includeIf('partials/footer')

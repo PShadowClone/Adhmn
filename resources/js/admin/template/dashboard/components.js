@@ -7,6 +7,7 @@ import quickPanel from './quickPanel'
 import scrollTop from './scrollTop'
 import toolBar from './toolBar'
 import chat from './chat'
+import vBody from './body'
 
 export default {
     vNav,
@@ -17,5 +18,6 @@ export default {
     scrollTop,
     toolBar,
     chat,
-    mobileHeader
+    mobileHeader,
+    vBody
 }

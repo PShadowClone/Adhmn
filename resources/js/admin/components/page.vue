@@ -15,7 +15,7 @@
     /**
      * load page's components
      */
-    import components from './page-partials/components'
+    import components from './page/components'
 
     export default {
         /**
