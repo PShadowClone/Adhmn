@@ -20,3 +20,6 @@ Route::get('/', function () {
 Route::any('admin/{all?}', function () {
     return view('template');
 })->where('all', '^(?!api).*$');
+Route::any('cp/{all?}', function () {
+    return view('template');
+})->where('all', '^(?!api).*$');

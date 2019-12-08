@@ -11,7 +11,7 @@
                         <div class="kt-login__container">
                             <div class="kt-login__logo">
                                 <a href="#">
-                                    <img src="@/assets/media/logos/logo-5.png">
+                                    <img src="/logo.png" class="auth-logo">
                                 </a>
                             </div>
                             <router-view/>
@@ -27,7 +27,7 @@
         name: 'layout.app',
         data: () => {
             return {
-                backgroundImage: import('@/assets/media/bg/bg-3.jpg')
+                backgroundImage:''
             };
         }
     }
@@ -39,7 +39,11 @@
     }
 
     @import "/assets/css/demo12/pages/login/login-3.css";
-    body {
-        background-image: url('/assets/media/bg/bg-3.jpg');
+    /*body {*/
+    /*    background-image: url("/assets/media/bg/bg-3.jpg");*/
+    /*}*/
+
+    .auth-logo {
+        width: 130px;
     }
 </style>

@@ -1,5 +1,9 @@
 window._ = require('lodash');
 window.$ = window.jQuery = require('jquery')
+import StorageManager from './util/StorageManager'
+
+window.storageManager = StorageManager;
+console.log(window.storageManager)
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests

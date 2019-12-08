@@ -2,47 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c224d6b6-e01e-4121-a29c-1a5a88ade163" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/components/loader.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/template/auth/layout.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/template/dashboard/body.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/views/auth/forgetPassword.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/views/auth/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/views/auth/signin.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/views/auth/signup.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/admin/axios/endpoints.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/admin/axios/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/admin/axios/methods.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/admin/components/alert.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/admin/mixins/axios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/admin/mixins/constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/admin/mixins/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/admin/mixins/storageManager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/admin/mixins/validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/admin/operations/authenticate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/admin/plugins/validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/admin/util/StorageManager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/admin/util/constants.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Admin/src/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Admin/src/Routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/3.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/4.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/5.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/6.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/6.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/admin/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/admin/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/admin/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/bootstrap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/admin/components/components.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/components/components.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/components/page-partials/body.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/components/page/body.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/components/page-partials/components.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/components/page/components.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/components/page-partials/footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/components/page/footer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/components/page-partials/header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/components/page/header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/components/page.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/components/page.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/admin/route/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/route/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/template/chat.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/template/dashboard/chat.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/template/common/footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/template/dashboard/common/footer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/template/common/header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/template/dashboard/common/header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/template/common/mobileHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/template/dashboard/common/mobileHeader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/template/common/subHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/template/dashboard/common/subHeader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/template/components.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/template/dashboard/components.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/template/layout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/template/dashboard/layout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/template/nav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/template/dashboard/nav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/template/quickPanel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/template/dashboard/quickPanel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/template/scrollTop.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/template/dashboard/scrollTop.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/template/toolBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/template/dashboard/toolBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/admin/template/auth/layout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/template/auth/layout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/admin/views/auth/signin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/views/auth/signin.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,17 +83,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/admin/template/auth/layout.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+            <state relative-caret-position="585">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
+        <entry file="file://$PROJECT_DIR$/resources/js/admin/route/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="435">
+              <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/js/admin/util/StorageManager.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="34" column="14" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/js/admin/bootstrap.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/js/admin/operations/authenticate.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -109,61 +128,46 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/js/admin/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="375">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/admin/template/dashboard/layout.vue">
+        <entry file="file://$PROJECT_DIR$/resources/js/admin/views/auth/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1005">
-              <caret line="67" selection-start-line="67" selection-end-line="67" />
+            <state relative-caret-position="15">
+              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/template.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/js/admin/mixins/storageManager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+            <state relative-caret-position="30">
+              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/admin/template/dashboard/nav.vue">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/admin/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+            <state relative-caret-position="390">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package-lock.json">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -202,25 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/database/seeds/AdminTableSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-        <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/Core/Auth/src/Providers/AuthServiceProvider.php" />
-        <option value="$PROJECT_DIR$/Core/Auth/src/Controllers/AuthController.php" />
-        <option value="$PROJECT_DIR$/Core/Auth/src/Resources/lang/en/lang.php" />
-        <option value="$PROJECT_DIR$/Core/Auth/src/Resources/lang/ar/lang.php" />
-        <option value="$PROJECT_DIR$/Core/Auth/src/Routes/api.php" />
-        <option value="$PROJECT_DIR$/Core/Admin/src/Requests/AdminRequest.php" />
-        <option value="$PROJECT_DIR$/Core/Admin/src/Interfaces/AdminInterface.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/config/auth.php" />
-        <option value="$PROJECT_DIR$/Core/Admin/src/Providers/AdminServiceProvider.php" />
-        <option value="$PROJECT_DIR$/Core/Admin/src/Resources/lang/en/lang.php" />
-        <option value="$PROJECT_DIR$/Core/Admin/src/Resources/lang/ar/lang.php" />
-        <option value="$PROJECT_DIR$/Core/Admin/src/Routes/api.php" />
-        <option value="$PROJECT_DIR$/app/Helpers/Constants.php" />
-        <option value="$PROJECT_DIR$/app/Helpers/Functions.php" />
         <option value="$PROJECT_DIR$/Core/Admin/src/Requests/AdminStoreRequest.php" />
         <option value="$PROJECT_DIR$/Core/Admin/src/Requests/AdminUpdateRequest.php" />
         <option value="$PROJECT_DIR$/Core/Admin/src/Migrations/2019_12_04_00000_create_admins_table.php" />
@@ -234,23 +219,42 @@
         <option value="$PROJECT_DIR$/Core/Admin/src/Routes/web.php" />
         <option value="$PROJECT_DIR$/resources/js/admin/views/auth.vue" />
         <option value="$PROJECT_DIR$/resources/js/admin/views/auth/index.vue" />
-        <option value="$PROJECT_DIR$/resources/js/admin/components/components.js" />
-        <option value="$PROJECT_DIR$/resources/js/admin/template/dashboard/components.js" />
         <option value="$PROJECT_DIR$/resources/views/landing.blade.php" />
-        <option value="$PROJECT_DIR$/resources/sass/app.scss" />
         <option value="$PROJECT_DIR$/resources/js/admin/views/auth/login.vue" />
         <option value="$PROJECT_DIR$/resources/js/admin/views/auth/signup.vue" />
         <option value="$PROJECT_DIR$/resources/js/admin/views/auth/forgetPassword.vuw" />
         <option value="$PROJECT_DIR$/resources/js/admin/views/auth/forgetPassword.vue" />
-        <option value="$PROJECT_DIR$/resources/js/admin/route/routes.js" />
         <option value="$PROJECT_DIR$/webpack.mix.js" />
         <option value="$PROJECT_DIR$/resources/js/admin/template/dashboard/body.vue" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/resources/js/admin/components/loader.vue" />
         <option value="$PROJECT_DIR$/resources/js/admin/components/page.vue" />
-        <option value="$PROJECT_DIR$/resources/js/admin/app.js" />
         <option value="$PROJECT_DIR$/resources/js/admin/template/dashboard/layout.vue" />
         <option value="$PROJECT_DIR$/resources/views/template.blade.php" />
+        <option value="$PROJECT_DIR$/resources/js/admin/template/dashboard/components.js" />
+        <option value="$PROJECT_DIR$/resources/js/admin/plgins.js" />
+        <option value="$PROJECT_DIR$/resources/js/admin/plgins/plgins.js" />
+        <option value="$PROJECT_DIR$/resources/js/admin/plugins/index.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/resources/js/admin/plugins/validate.js" />
+        <option value="$PROJECT_DIR$/resources/sass/app.scss" />
+        <option value="$PROJECT_DIR$/resources/js/admin/mixins/validate.js" />
+        <option value="$PROJECT_DIR$/resources/js/admin/app.js" />
+        <option value="$PROJECT_DIR$/resources/js/admin/axios/endpoints.js" />
+        <option value="$PROJECT_DIR$/resources/js/admin/axios/methods.js" />
+        <option value="$PROJECT_DIR$/resources/js/admin/axios/index.js" />
+        <option value="$PROJECT_DIR$/resources/js/admin/util/constants.js" />
+        <option value="$PROJECT_DIR$/resources/js/admin/mixins/axios.js" />
+        <option value="$PROJECT_DIR$/resources/js/admin/mixins/constants.js" />
+        <option value="$PROJECT_DIR$/resources/js/admin/components/components.js" />
+        <option value="$PROJECT_DIR$/resources/js/admin/components/alert.vue" />
+        <option value="$PROJECT_DIR$/resources/js/admin/mixins/index.js" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/js/admin/route/routes.js" />
+        <option value="$PROJECT_DIR$/resources/js/admin/mixins/storageManager.js" />
+        <option value="$PROJECT_DIR$/resources/js/admin/util/StorageManager.js" />
+        <option value="$PROJECT_DIR$/resources/js/admin/bootstrap.js" />
+        <option value="$PROJECT_DIR$/resources/js/admin/operations/authenticate.js" />
+        <option value="$PROJECT_DIR$/resources/js/admin/views/auth/signin.vue" />
         <option value="$PROJECT_DIR$/resources/js/admin/template/auth/layout.vue" />
         <option value="$PROJECT_DIR$/resources/js/admin/App.vue" />
       </list>
@@ -358,7 +362,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1680" />
     <option name="height" value="1050" />
   </component>
@@ -368,6 +372,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -378,6 +383,11 @@
             <path>
               <item name="Adhmn" type="b2602c69:ProjectViewProjectNode" />
               <item name="Adhmn" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Adhmn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Adhmn" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -399,7 +409,15 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="mixins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Adhmn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Adhmn" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="operations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Adhmn" type="b2602c69:ProjectViewProjectNode" />
@@ -432,8 +450,7 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Adhmn" type="b2602c69:ProjectViewProjectNode" />
@@ -473,7 +490,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -495,17 +511,17 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/js/admin/template/dashboard" />
-      <recent name="$PROJECT_DIR$/resources/js/admin/views/auth" />
-      <recent name="$PROJECT_DIR$/Core/Admin/src" />
-      <recent name="$PROJECT_DIR$/resources/js/admin/views/settings" />
-      <recent name="$PROJECT_DIR$/public" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/landing-assets" />
       <recent name="$PROJECT_DIR$/resources/js/landing_page" />
       <recent name="$PROJECT_DIR$/resources/js/assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/js/admin/plgins" />
+      <recent name="$PROJECT_DIR$/resources/js/admin/template/dashboard" />
+      <recent name="$PROJECT_DIR$/resources/js/admin/views/auth" />
+      <recent name="$PROJECT_DIR$/Core/Admin/src" />
+      <recent name="$PROJECT_DIR$/resources/js/admin/views/settings" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -547,18 +563,19 @@
       <workItem from="1575425678366" duration="6741000" />
       <workItem from="1575501637769" duration="10265000" />
       <workItem from="1575701481864" duration="56000" />
-      <workItem from="1575758967792" duration="123000" />
+      <workItem from="1575758967792" duration="11204000" />
+      <workItem from="1575812802890" duration="1024000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66702000" />
+    <option name="totallyTimeSpent" value="78807000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.42673993" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.43162394" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -573,7 +590,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.34591836" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.34591836" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32970297" />
       <window_info anchor="bottom" id="File Transfer" order="13" weight="0.32959184" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32959184" />
@@ -584,13 +601,13 @@
       <window_info anchor="right" id="Remote Host" order="4" weight="0.3778999" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34737486" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.42673993" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32970297" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32959184" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -599,13 +616,14 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3489796" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.34591836" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32970297" />
-      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.32970297" />
+      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.32959184" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.32959184" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32967034" />
       <window_info anchor="right" id="Remote Host" order="4" weight="0.3778999" />
     </layout-to-restore>
   </component>
@@ -613,127 +631,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Core/Auth/src/Controllers/AuthController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="111" selection-start-line="21" selection-start-column="111" selection-end-line="21" selection-end-column="111" />
-          <folding>
-            <element signature="e#41#69#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Country/src/Interfaces/CountryInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="873">
-          <caret line="65" column="32" selection-start-line="10" selection-start-column="3" selection-end-line="65" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Admin/src/Resources/lang/en/lang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="48" selection-start-line="10" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Admin/src/Resources/lang/ar/lang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="66" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Admin/src/Interfaces/AdminInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Helpers/Constants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Helpers/Functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Admin/src/Migrations/2019_12_04_00000_create_admins_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Admin/src/Requests/AdminUpdateRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-          <folding>
-            <element signature="e#41#84#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/factories/AdminFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Admin/src/Requests/AdminStoreRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Admin/src/Models/Admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
-          <folding>
-            <element signature="e#37#76#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/lang/en/lang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="56" selection-start-line="6" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/lang/ar/lang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Core/Admin/src/Routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -788,13 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/admin/views/auth/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/admin/route/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -813,27 +703,11 @@
         <state relative-caret-position="-565" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/admin/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/landing.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/admin/template/dashboard/chat.vue">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/admin/views/auth/signin.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-          <folding>
-            <element signature="n#div#0;n#template#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/admin/views/auth/signup.vue">
       <provider selected="true" editor-type-id="text-editor">
@@ -860,24 +734,10 @@
     <entry file="file://$PROJECT_DIR$/webpack.mix.website.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/admin/template/dashboard/components.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/admin/template/dashboard/body.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="10" selection-start-line="3" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/admin/route/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -895,31 +755,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/admin/components/components.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/admin/components/page.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/admin/template/auth/layout.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
@@ -930,6 +769,116 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/admin/template/dashboard/nav.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/admin/template/dashboard/components.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/admin/mixins/validate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/admin/plugins/validate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/admin/plugins/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/admin/axios/methods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/admin/axios/endpoints.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/admin/mixins/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/admin/components/components.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/admin/mixins/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/admin/axios/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="54" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/admin/components/alert.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/admin/mixins/axios.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/template.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -937,33 +886,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/admin/template/dashboard/nav.vue">
+    <entry file="file://$PROJECT_DIR$/resources/js/admin/util/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/admin/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/resources/js/admin/mixins/storageManager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        <state relative-caret-position="30">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/resources/js/admin/views/auth/signin.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/admin/template/auth/layout.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/admin/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/admin/operations/authenticate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/admin/views/auth/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/admin/route/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/admin/util/StorageManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="14" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="14" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/admin/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="375">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
         </state>
       </provider>
     </entry>

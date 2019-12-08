@@ -17,6 +17,11 @@
                 let meta = this.$route.meta.layout;
                 if (meta == undefined)
                     return;
+                if (meta == 'auth') {
+                    document.getElementsByTagName('body')[0].style.backgroundImage = 'url("/assets/media/bg/bg-3.jpg")';
+                } else {
+                    document.getElementsByTagName('body')[0].style.backgroundImage = 'url("")';
+                }
                 return (this.$route.meta.layout || defaultLayout) + "-layout"
             }
         }
