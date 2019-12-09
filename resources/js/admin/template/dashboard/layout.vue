@@ -1,12 +1,5 @@
 <template>
     <div v-cloak>
-        <div class="alert alert-warning under-construction fade show" role="alert">
-            <div class="construction-content">
-                <i class="flaticon-warning"></i>
-                <div class="alert-text">Under construction !</div>
-            </div>
-
-        </div>
         <!-- begin:: Page -->
         <!-- begin:: Header Mobile -->
         <mobile-header></mobile-header>

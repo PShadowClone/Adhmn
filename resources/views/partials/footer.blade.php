@@ -20,6 +20,7 @@
 
 </script>
 
+
 <!--begin:: Global Mandatory Vendors -->
 <script src="{{asset('assets/vendors/general/jquery/dist/jquery.js')}}" type="text/javascript"></script>
 <script src="{{asset('assets/vendors/general/popper.js/dist/umd/popper.js')}}" type="text/javascript"></script>
@@ -125,9 +126,9 @@
 <!--end::Page Vendors -->
 
 <!--begin::Page Scripts(used by this page) -->
-<script src="{{asset('assets/js/demo12/pages/dashboard.js')}}" type="text/javascript"></script>
+{{--<script src="{{asset('assets/js/demo12/pages/dashboard.js')}}" type="text/javascript"></script>--}}
 <!--end::Page Scripts -->
 
-<!-- START SCRIPT @AUTHOR AMR -->
+{{--<!-- START SCRIPT @AUTHOR AMR -->--}}
 <script src="{{mix('js/app.js')}}"></script>
-<!-- END SCRIPT @AUTHOR AMR -->
+{{--<!-- END SCRIPT @AUTHOR AMR -->--}}

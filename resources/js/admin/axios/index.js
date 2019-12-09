@@ -27,53 +27,53 @@ axiosInstance.interceptors.request.use(function (config) {
     error => Promise.reject(error)
 );
 
-
-axiosInstance.interceptors.response.use(
-    response => {
-        // const {status, message} = response.data;
-        // if (response.data.status === 'error') {
-        //
-        //     switch (response.data.error_code) {
-        //         case 102 :
-        //             break;
-        //         case 106 :
-        //             window.location.href = '/' + SUPER_URI;
-        //             break;
-        //
-        //         default :
-        //             break;
-        //     }
-        //     return response;
-        // }
-        return response;
-    },
-    error => {
-        // const {status} = error.response;
-        // console.error('error.response', error.response);
-        // // console.error("response", status)
-        // // Show the user a 500 error
-        // if (status >= 500) {
-        //     Brilliant.$emit('error', error.response.data.message)
-        // }
-        //
-        // // Handle Session Timeouts
-        // if (status === 401) {
-        //     window.location.href = Brilliant.config.base
-        // }
-        //
-        // // Handle Forbidden
-        // if (status === 403) {
-        //     router.push({name: '403'})
-        // }
-        //
-        // // Handle Token Timeouts
-        // if (status === 419) {
-        //     Brilliant.$emit('token-expired')
-        // }
-        //
-        // return Promise.reject(error)
-    }
-)
+//
+// axiosInstance.interceptors.response.use(
+//     response => {
+//         // const {status, message} = response.data;
+//         // if (response.data.status === 'error') {
+//         //
+//         //     switch (response.data.error_code) {
+//         //         case 102 :
+//         //             break;
+//         //         case 106 :
+//         //             window.location.href = '/' + SUPER_URI;
+//         //             break;
+//         //
+//         //         default :
+//         //             break;
+//         //     }
+//         //     return response;
+//         // }
+//         return response;
+//     },
+//     error => {
+//         // const {status} = error.response;
+//         // console.error('error.response', error.response);
+//         // // console.error("response", status)
+//         // // Show the user a 500 error
+//         // if (status >= 500) {
+//         //     Brilliant.$emit('error', error.response.data.message)
+//         // }
+//         //
+//         // // Handle Session Timeouts
+//         // if (status === 401) {
+//         //     window.location.href = Brilliant.config.base
+//         // }
+//         //
+//         // // Handle Forbidden
+//         // if (status === 403) {
+//         //     router.push({name: '403'})
+//         // }
+//         //
+//         // // Handle Token Timeouts
+//         // if (status === 419) {
+//         //     Brilliant.$emit('token-expired')
+//         // }
+//         //
+//         return Promise.reject(error)
+//     }
+// )
 /**
  * publish endpoints
  *

@@ -1,8 +1,17 @@
 import Vue from 'vue'
 import page from './page'
-import Loader from './loader'
 import alert from './alert'
+import VueGoodTablePlugin from 'vue-good-table';
+import 'vue-good-table/dist/vue-good-table.css'
+import {VueGoodTable} from 'vue-good-table';
+import Paginate from 'vuejs-paginate'
 
+Vue.component('paginate', Paginate)
+import BootstrapVue from 'bootstrap-vue'
+
+Vue.use(BootstrapVue)
+
+Vue.use(VueGoodTablePlugin);
 Vue.component('page', page)
-Vue.component('loader', Loader)
 Vue.component('alert', alert)
+Vue.component('VueGoodTable', VueGoodTable)

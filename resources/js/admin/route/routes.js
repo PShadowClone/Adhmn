@@ -16,9 +16,6 @@ export const routes = [
                 path: 'settings/',
                 component: () => import('@/views/settings/index'),
                 name: 'settings.index',
-
-                default: true,
-
                 children: [
                     {
                         path: 'landing/',
@@ -32,8 +29,20 @@ export const routes = [
                         ]
                     }
                 ],
-
-
+            },
+            {
+                path: 'country/',
+                component: () => import('@/views/country/index'),
+                name: 'country.index',
+                meta: {layout: 'dashboard'},
+                beforeEnter: authenticate,
+                children: [
+                    {
+                        path: '/',
+                        meta: {layout: 'dashboard'},
+                        component: () => import('@/views/country/list.vue'),
+                    }
+                ],
             },
             {
                 path: 'login',

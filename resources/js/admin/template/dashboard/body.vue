@@ -1,7 +1,6 @@
 <template>
     <div v-cloak>
         <router-view/>
-        <loader/>
     </div>
 </template>
 <script>

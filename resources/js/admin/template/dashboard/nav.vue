@@ -33,13 +33,13 @@
                             data-ktmenu-submenu-toggle="hover"><a href="javascript:;"
                                                                   class="kt-menu__link kt-menu__toggle"><i
                                 class="kt-menu__link-icon flaticon-layers"></i><span
-                                class="kt-menu__link-text">Settings</span><i
+                                class="kt-menu__link-text">Admins</span><i
                                 class="kt-menu__ver-arrow la la-angle-right"></i></a>
                             <div class="kt-menu__submenu "><span class="kt-menu__arrow"></span>
                                 <ul class="kt-menu__subnav">
                                     <li class="kt-menu__item  kt-menu__item--parent" aria-haspopup="true"><span
                                             class="kt-menu__link"><span
-                                            class="kt-menu__link-text">Settings</span></span></li>
+                                            class="kt-menu__link-text">Add</span></span></li>
                                     <li class="kt-menu__item " aria-haspopup="true">
                                         <router-link :to="{name: 'landing.index'}"
                                                      class="kt-menu__link "><i
@@ -49,9 +49,10 @@
                                     </li>
                                     <li class="kt-menu__item " aria-haspopup="true">
                                         <router-link :to="{name : 'testing'}"
-                                                                                       class="kt-menu__link "><i
-                                            class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span
-                                            class="kt-menu__link-text">Timesheet</span></router-link></li>
+                                                     class="kt-menu__link "><i
+                                                class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span
+                                                class="kt-menu__link-text">Show</span></router-link>
+                                    </li>
                                     <li class="kt-menu__item " aria-haspopup="true"><a href="#"
                                                                                        class="kt-menu__link "><i
                                             class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span

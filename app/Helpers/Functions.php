@@ -53,3 +53,4 @@ if (!function_exists('query_method')) {
         }
     }
 }
+

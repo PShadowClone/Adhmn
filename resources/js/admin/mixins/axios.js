@@ -14,11 +14,13 @@ export default {
         }
     },
     methods: {
-        request(method, url, param, then, catchMethod, finallyMethod) {
+        request(method, url, param, then, catchMethod = null, finallyMethod = null) {
             let axiosInstance = null;
             switch (method) {
                 case 'get':
-                    axiosInstance = instance.get(url);
+                    axiosInstance = instance.get(url).then(({data}) => {
+                        then(data);
+                    });
                     break;
                 case 'post':
                     instance.post(url, param).then(({data}) => {
