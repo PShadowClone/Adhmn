@@ -1,44 +1,47 @@
 <template>
-    <div class="kt-portlet">
-        <div class="kt-portlet__head">
-            <div class="kt-portlet__head-label">
-                <h3 class="kt-portlet__head-title">
-                    Countries
-                </h3>
-            </div>
-        </div>
-        <div class="kt-portlet__body">
-            <!--begin::Section-->
-            <div class="kt-section">
-                <div class="kt-section__content">
-                    <div class="table-responsive">
-                        <vue-good-table
-                                styleClass="table table-bordered"
-                                :columns="columns"
-                                :rows="rows"
-                                :line-numbers="true"
-                        >
-                        </vue-good-table>
-
-
-                        <b-pagination
-                                v-if="currentPage"
-                                v-model="currentPage"
-                                :total-rows="total"
-                                :per-page="perPage"
-                                align="right"
-
-                        ></b-pagination>
-
-
-                    </div>
+    <div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
+        <div class="kt-portlet">
+            <div class="kt-portlet__head">
+                <div class="kt-portlet__head-label">
+                    <h3 class="kt-portlet__head-title">
+                        Countries
+                    </h3>
                 </div>
             </div>
-            <!--end::Section-->
-        </div>
+            <div class="kt-portlet__body">
+                <!--begin::Section-->
+                <div class="kt-section">
+                    <div class="kt-section__content">
+                        <div class="table-responsive">
+                            <vue-good-table
+                                    styleClass="table table-bordered"
+                                    :columns="columns"
+                                    :rows="rows"
+                                    :line-numbers="true"
+                            >
+                            </vue-good-table>
 
-        <!--end::Form-->
+
+                            <b-pagination
+                                    v-if="currentPage"
+                                    v-model="currentPage"
+                                    :total-rows="total"
+                                    :per-page="perPage"
+                                    align="right"
+
+                            ></b-pagination>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!--end::Section-->
+            </div>
+
+            <!--end::Form-->
+        </div>
     </div>
+
 </template>
 <script>
 

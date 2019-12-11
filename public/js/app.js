@@ -2039,12 +2039,31 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 /**
  * load page's components
  */
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    showFooter: {
+      type: Boolean,
+      required: false,
+      "default": true
+    },
+    title: {
+      type: String,
+      required: true
+    }
+  },
+
   /**
    * register page level components
    */
@@ -2062,6 +2081,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
 //
 //
 //
@@ -2108,7 +2129,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    title: {
+      type: String,
+      required: true
+    }
+  }
+});
 
 /***/ }),
 
@@ -3199,21 +3227,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -3228,6 +3241,21 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components */ "./resources/js/admin/template/dashboard/components.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3287,6 +3315,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
 //
 //
 //
@@ -91539,9 +91569,24 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "kt-portlet" },
-    [_c("v-header"), _vm._v(" "), _c("v-body"), _vm._v(" "), _c("v-footer")],
-    1
+    {
+      staticClass:
+        "kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid"
+    },
+    [
+      _c(
+        "div",
+        { staticClass: "kt-portlet" },
+        [
+          _c("v-header", { attrs: { title: _vm.title } }),
+          _vm._v(" "),
+          _c("v-body", [_vm._t("body")], 2),
+          _vm._v(" "),
+          _vm.showFooter ? _c("v-footer") : _vm._e()
+        ],
+        1
+      )
+    ]
   )
 }
 var staticRenderFns = []
@@ -91566,7 +91611,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _c("div", [_vm._t("default")], 2)
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -91635,22 +91680,15 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "kt-portlet__head" }, [
-      _c("div", { staticClass: "kt-portlet__head-label" }, [
-        _c("h3", { staticClass: "kt-portlet__head-title" }, [
-          _vm._v("\n            Base Controls\n        ")
-        ])
+  return _c("div", { staticClass: "kt-portlet__head" }, [
+    _c("div", { staticClass: "kt-portlet__head-label" }, [
+      _c("h3", { staticClass: "kt-portlet__head-title" }, [
+        _vm._v("\n            " + _vm._s(_vm.title) + "\n        ")
       ])
     ])
-  }
-]
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -95017,93 +95055,10 @@ var render = function() {
             _c(
               "a",
               {
-                staticClass: "btn kt-subheader__btn-daterange",
-                attrs: {
-                  href: "#",
-                  id: "kt_dashboard_daterangepicker",
-                  "data-toggle": "kt-tooltip",
-                  title: "Select dashboard daterange",
-                  "data-placement": "left"
-                }
+                staticClass: "btn kt-subheader__btn-primary",
+                attrs: { href: "#" }
               },
-              [
-                _c(
-                  "span",
-                  {
-                    staticClass: "kt-subheader__btn-daterange-title",
-                    attrs: { id: "kt_dashboard_daterangepicker_title" }
-                  },
-                  [_vm._v("Today")]
-                ),
-                _vm._v(" \n                    "),
-                _c(
-                  "span",
-                  {
-                    staticClass: "kt-subheader__btn-daterange-date",
-                    attrs: { id: "kt_dashboard_daterangepicker_date" }
-                  },
-                  [_vm._v("Aug 16")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "svg",
-                  {
-                    staticClass: "kt-svg-icon kt-svg-icon--sm",
-                    attrs: {
-                      xmlns: "http://www.w3.org/2000/svg",
-                      "xmlns:xlink": "http://www.w3.org/1999/xlink",
-                      width: "24px",
-                      height: "24px",
-                      viewBox: "0 0 24 24",
-                      version: "1.1"
-                    }
-                  },
-                  [
-                    _c(
-                      "g",
-                      {
-                        attrs: {
-                          stroke: "none",
-                          "stroke-width": "1",
-                          fill: "none",
-                          "fill-rule": "evenodd"
-                        }
-                      },
-                      [
-                        _c("rect", {
-                          attrs: {
-                            id: "bound",
-                            x: "0",
-                            y: "0",
-                            width: "24",
-                            height: "24"
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("path", {
-                          attrs: {
-                            d:
-                              "M4.875,20.75 C4.63541667,20.75 4.39583333,20.6541667 4.20416667,20.4625 L2.2875,18.5458333 C1.90416667,18.1625 1.90416667,17.5875 2.2875,17.2041667 C2.67083333,16.8208333 3.29375,16.8208333 3.62916667,17.2041667 L4.875,18.45 L8.0375,15.2875 C8.42083333,14.9041667 8.99583333,14.9041667 9.37916667,15.2875 C9.7625,15.6708333 9.7625,16.2458333 9.37916667,16.6291667 L5.54583333,20.4625 C5.35416667,20.6541667 5.11458333,20.75 4.875,20.75 Z",
-                            id: "check",
-                            fill: "#000000",
-                            "fill-rule": "nonzero",
-                            opacity: "0.3"
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("path", {
-                          attrs: {
-                            d:
-                              "M2,11.8650466 L2,6 C2,4.34314575 3.34314575,3 5,3 L19,3 C20.6568542,3 22,4.34314575 22,6 L22,15 C22,15.0032706 21.9999948,15.0065399 21.9999843,15.009808 L22.0249378,15 L22.0249378,19.5857864 C22.0249378,20.1380712 21.5772226,20.5857864 21.0249378,20.5857864 C20.7597213,20.5857864 20.5053674,20.4804296 20.317831,20.2928932 L18.0249378,18 L12.9835977,18 C12.7263047,14.0909841 9.47412135,11 5.5,11 C4.23590829,11 3.04485894,11.3127315 2,11.8650466 Z M6,7 C5.44771525,7 5,7.44771525 5,8 C5,8.55228475 5.44771525,9 6,9 L15,9 C15.5522847,9 16,8.55228475 16,8 C16,7.44771525 15.5522847,7 15,7 L6,7 Z",
-                            id: "Combined-Shape",
-                            fill: "#000000"
-                          }
-                        })
-                      ]
-                    )
-                  ]
-                )
-              ]
+              [_vm._v("\n                    Actions  \n                    ")]
             ),
             _vm._v(" "),
             _c(
@@ -95112,8 +95067,9 @@ var render = function() {
                 staticClass: "dropdown dropdown-inline",
                 attrs: {
                   "data-toggle": "kt-tooltip",
-                  title: "Quick actions",
-                  "data-placement": "left"
+                  title: "",
+                  "data-placement": "left",
+                  "data-original-title": "Quick actions"
                 }
               },
               [
@@ -95156,17 +95112,13 @@ var render = function() {
                           },
                           [
                             _c("polygon", {
-                              attrs: {
-                                id: "Shape",
-                                points: "0 0 24 0 24 24 0 24"
-                              }
+                              attrs: { points: "0 0 24 0 24 24 0 24" }
                             }),
                             _vm._v(" "),
                             _c("path", {
                               attrs: {
                                 d:
                                   "M5.85714286,2 L13.7364114,2 C14.0910962,2 14.4343066,2.12568431 14.7051108,2.35473959 L19.4686994,6.3839416 C19.8056532,6.66894833 20,7.08787823 20,7.52920201 L20,20.0833333 C20,21.8738751 19.9795521,22 18.1428571,22 L5.85714286,22 C4.02044787,22 4,21.8738751 4,20.0833333 L4,3.91666667 C4,2.12612489 4.02044787,2 5.85714286,2 Z",
-                                id: "Combined-Shape",
                                 fill: "#000000",
                                 "fill-rule": "nonzero",
                                 opacity: "0.3"
@@ -95177,7 +95129,6 @@ var render = function() {
                               attrs: {
                                 d:
                                   "M11,14 L9,14 C8.44771525,14 8,13.5522847 8,13 C8,12.4477153 8.44771525,12 9,12 L11,12 L11,10 C11,9.44771525 11.4477153,9 12,9 C12.5522847,9 13,9.44771525 13,10 L13,12 L15,12 C15.5522847,12 16,12.4477153 16,13 C16,13.5522847 15.5522847,14 15,14 L13,14 L13,16 C13,16.5522847 12.5522847,17 12,17 C11.4477153,17 11,16.5522847 11,16 L11,14 Z",
-                                id: "Combined-Shape",
                                 fill: "#000000"
                               }
                             })
@@ -95204,7 +95155,78 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "kt-subheader__main" }, [
       _c("h3", { staticClass: "kt-subheader__title" }, [
-        _vm._v("\n\n                Empty Page ")
+        _vm._v(
+          "\n\n                Bootstrap Markdown                            "
+        )
+      ]),
+      _vm._v(" "),
+      _c("span", { staticClass: "kt-subheader__separator kt-hidden" }),
+      _vm._v(" "),
+      _c("div", { staticClass: "kt-subheader__breadcrumbs" }, [
+        _c(
+          "a",
+          {
+            staticClass: "kt-subheader__breadcrumbs-home",
+            attrs: { href: "#" }
+          },
+          [_c("i", { staticClass: "flaticon2-shelter" })]
+        ),
+        _vm._v(" "),
+        _c("span", { staticClass: "kt-subheader__breadcrumbs-separator" }),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass: "kt-subheader__breadcrumbs-link",
+            attrs: { href: "" }
+          },
+          [_vm._v("\n                    Crud                        ")]
+        ),
+        _vm._v(" "),
+        _c("span", { staticClass: "kt-subheader__breadcrumbs-separator" }),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass: "kt-subheader__breadcrumbs-link",
+            attrs: { href: "" }
+          },
+          [
+            _vm._v(
+              "\n                    Forms & Controls                        "
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c("span", { staticClass: "kt-subheader__breadcrumbs-separator" }),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass: "kt-subheader__breadcrumbs-link",
+            attrs: { href: "" }
+          },
+          [
+            _vm._v(
+              "\n                    Form Text Editors                        "
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c("span", { staticClass: "kt-subheader__breadcrumbs-separator" }),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass: "kt-subheader__breadcrumbs-link",
+            attrs: { href: "" }
+          },
+          [
+            _vm._v(
+              "\n                    Markdown Editor                        "
+            )
+          ]
+        )
       ])
     ])
   },
@@ -95229,7 +95251,8 @@ var staticRenderFns = [
               attrs: {
                 "data-toggle": "kt-tooltip",
                 "data-placement": "right",
-                title: "Click to learn more..."
+                title: "",
+                "data-original-title": "Click to learn more..."
               }
             })
           ]),
@@ -95293,7 +95316,7 @@ var staticRenderFns = [
                 staticClass: "btn btn-label-brand btn-bold btn-sm",
                 attrs: { href: "#" }
               },
-              [_vm._v("Upgrade\n                                    plan")]
+              [_vm._v("Upgrade plan")]
             ),
             _vm._v(" "),
             _c(
@@ -95304,7 +95327,8 @@ var staticRenderFns = [
                   href: "#",
                   "data-toggle": "kt-tooltip",
                   "data-placement": "right",
-                  title: "Click to learn more..."
+                  title: "",
+                  "data-original-title": "Click to learn more..."
                 }
               },
               [_vm._v("Learn more")]
@@ -95338,8 +95362,13 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    {},
+    {
+      staticClass:
+        "kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed"
+    },
     [
+      _vm._m(0),
+      _vm._v(" "),
       _c("mobile-header"),
       _vm._v(" "),
       _c("div", { staticClass: "kt-grid kt-grid--hor kt-grid--root" }, [
@@ -95350,7 +95379,18 @@ var render = function() {
               "kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page"
           },
           [
-            _c("v-nav"),
+            _vm._m(1),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "kt-aside  kt-aside--fixed  kt-grid__item kt-grid kt-grid--desktop kt-grid--hor-desktop",
+                attrs: { id: "kt_aside" }
+              },
+              [_c("v-nav")],
+              1
+            ),
             _vm._v(" "),
             _c(
               "div",
@@ -95377,8 +95417,7 @@ var render = function() {
               ],
               1
             )
-          ],
-          1
+          ]
         )
       ]),
       _vm._v(" "),
@@ -95391,7 +95430,39 @@ var render = function() {
     1
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "alert alert-warning under-construction fade show",
+        attrs: { role: "alert" }
+      },
+      [
+        _c("div", { staticClass: "construction-content" }, [
+          _c("i", { staticClass: "flaticon-warning" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "alert-text" }, [
+            _vm._v("Under construction !")
+          ])
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "button",
+      { staticClass: "kt-aside-close ", attrs: { id: "kt_aside_close_btn" } },
+      [_c("i", { staticClass: "la la-close" })]
+    )
+  }
+]
 render._withStripped = true
 
 
@@ -95419,174 +95490,119 @@ var render = function() {
     _c(
       "div",
       {
-        staticClass:
-          "kt-aside  kt-aside--fixed  kt-grid__item kt-grid kt-grid--desktop kt-grid--hor-desktop",
-        attrs: { id: "kt_aside" }
+        staticClass: "kt-aside-menu-wrapper kt-grid__item kt-grid__item--fluid",
+        attrs: { id: "kt_aside_menu_wrapper" }
       },
       [
-        _vm._m(1),
-        _vm._v(" "),
         _c(
           "div",
           {
-            staticClass:
-              "kt-aside-menu-wrapper kt-grid__item kt-grid__item--fluid",
-            attrs: { id: "kt_aside_menu_wrapper" }
+            staticClass: "kt-aside-menu kt-scroll ps ps--active-y",
+            attrs: {
+              id: "kt_aside_menu",
+              "data-ktmenu-vertical": "1",
+              "data-ktmenu-scroll": "1",
+              "data-ktmenu-dropdown-timeout": "500"
+            }
           },
           [
-            _c(
-              "div",
-              {
-                staticClass: "kt-aside-menu ",
-                attrs: {
-                  id: "kt_aside_menu",
-                  "data-ktmenu-vertical": "1",
-                  "data-ktmenu-scroll": "1",
-                  "data-ktmenu-dropdown-timeout": "500"
-                }
-              },
-              [
-                _c("ul", { staticClass: "kt-menu__nav " }, [
-                  _vm._m(2),
-                  _vm._v(" "),
+            _c("ul", { staticClass: "kt-menu__nav " }, [
+              _vm._m(1),
+              _vm._v(" "),
+              _vm._m(2),
+              _vm._v(" "),
+              _vm._m(3),
+              _vm._v(" "),
+              _vm._m(4),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  staticClass: "kt-menu__item ",
+                  attrs: { "aria-haspopup": "true" }
+                },
+                [
                   _c(
-                    "li",
+                    "router-link",
                     {
-                      staticClass: "kt-menu__item  kt-menu__item--submenu",
-                      attrs: {
-                        "aria-haspopup": "true",
-                        "data-ktmenu-submenu-toggle": "hover"
-                      }
+                      staticClass: "kt-menu__link ",
+                      attrs: { to: { name: "landing.control" } }
                     },
                     [
-                      _vm._m(3),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "kt-menu__submenu " }, [
-                        _c("span", { staticClass: "kt-menu__arrow" }),
-                        _vm._v(" "),
-                        _c("ul", { staticClass: "kt-menu__subnav" }, [
-                          _vm._m(4),
-                          _vm._v(" "),
-                          _c(
-                            "li",
-                            {
-                              staticClass: "kt-menu__item ",
-                              attrs: { "aria-haspopup": "true" }
-                            },
-                            [
-                              _c(
-                                "router-link",
-                                {
-                                  staticClass: "kt-menu__link ",
-                                  attrs: { to: { name: "landing.index" } }
-                                },
-                                [
-                                  _c(
-                                    "i",
-                                    {
-                                      staticClass:
-                                        "kt-menu__link-bullet kt-menu__link-bullet--dot"
-                                    },
-                                    [_c("span")]
-                                  ),
-                                  _c(
-                                    "span",
-                                    { staticClass: "kt-menu__link-text" },
-                                    [_vm._v("Landing")]
-                                  )
-                                ]
-                              )
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "li",
-                            {
-                              staticClass: "kt-menu__item ",
-                              attrs: { "aria-haspopup": "true" }
-                            },
-                            [
-                              _c(
-                                "router-link",
-                                {
-                                  staticClass: "kt-menu__link ",
-                                  attrs: { to: { name: "testing" } }
-                                },
-                                [
-                                  _c(
-                                    "i",
-                                    {
-                                      staticClass:
-                                        "kt-menu__link-bullet kt-menu__link-bullet--dot"
-                                    },
-                                    [_c("span")]
-                                  ),
-                                  _c(
-                                    "span",
-                                    { staticClass: "kt-menu__link-text" },
-                                    [_vm._v("Show")]
-                                  )
-                                ]
-                              )
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _vm._m(5),
-                          _vm._v(" "),
-                          _vm._m(6)
-                        ])
+                      _c("i", {
+                        staticClass: "kt-menu__link-icon flaticon-light"
+                      }),
+                      _c("span", { staticClass: "kt-menu__link-text" }, [
+                        _vm._v("Landing Page")
                       ])
                     ]
-                  ),
-                  _vm._v(" "),
-                  _vm._m(7),
-                  _vm._v(" "),
-                  _vm._m(8),
-                  _vm._v(" "),
-                  _vm._m(9),
-                  _vm._v(" "),
-                  _vm._m(10),
-                  _vm._v(" "),
-                  _vm._m(11),
-                  _vm._v(" "),
-                  _vm._m(12),
-                  _vm._v(" "),
-                  _vm._m(13),
-                  _vm._v(" "),
-                  _vm._m(14),
-                  _vm._v(" "),
-                  _vm._m(15),
-                  _vm._v(" "),
-                  _vm._m(16),
-                  _vm._v(" "),
-                  _vm._m(17),
-                  _vm._v(" "),
-                  _vm._m(18),
-                  _vm._v(" "),
-                  _vm._m(19),
-                  _vm._v(" "),
-                  _vm._m(20),
-                  _vm._v(" "),
-                  _vm._m(21),
-                  _vm._v(" "),
-                  _vm._m(22),
-                  _vm._v(" "),
-                  _vm._m(23),
-                  _vm._v(" "),
-                  _vm._m(24),
-                  _vm._v(" "),
-                  _vm._m(25),
-                  _vm._v(" "),
-                  _vm._m(26),
-                  _vm._v(" "),
-                  _vm._m(27),
-                  _vm._v(" "),
-                  _vm._m(28)
-                ])
-              ]
-            )
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  staticClass: "kt-menu__item ",
+                  attrs: { "aria-haspopup": "true" }
+                },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "kt-menu__link ",
+                      attrs: { to: { name: "country.list" } }
+                    },
+                    [
+                      _c("i", {
+                        staticClass: "kt-menu__link-icon flaticon-light"
+                      }),
+                      _c("span", { staticClass: "kt-menu__link-text" }, [
+                        _vm._v("Countries")
+                      ])
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _vm._m(5),
+              _vm._v(" "),
+              _vm._m(6),
+              _vm._v(" "),
+              _vm._m(7),
+              _vm._v(" "),
+              _vm._m(8),
+              _vm._v(" "),
+              _vm._m(9),
+              _vm._v(" "),
+              _vm._m(10),
+              _vm._v(" "),
+              _vm._m(11),
+              _vm._v(" "),
+              _vm._m(12),
+              _vm._v(" "),
+              _vm._m(13),
+              _vm._v(" "),
+              _vm._m(14),
+              _vm._v(" "),
+              _vm._m(15),
+              _vm._v(" "),
+              _vm._m(16),
+              _vm._v(" "),
+              _vm._m(17),
+              _vm._v(" "),
+              _vm._m(18),
+              _vm._v(" "),
+              _vm._m(19),
+              _vm._v(" "),
+              _vm._m(20),
+              _vm._v(" "),
+              _vm._m(21),
+              _vm._v(" "),
+              _vm._m(22)
+            ])
           ]
         )
       ]
@@ -95594,16 +95610,6 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "button",
-      { staticClass: "kt-aside-close ", attrs: { id: "kt_aside_close_btn" } },
-      [_c("i", { staticClass: "la la-close" })]
-    )
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -95660,70 +95666,156 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c(
-      "a",
-      {
-        staticClass: "kt-menu__link kt-menu__toggle",
-        attrs: { href: "javascript:;" }
-      },
-      [
-        _c("i", { staticClass: "kt-menu__link-icon flaticon-layers" }),
-        _c("span", { staticClass: "kt-menu__link-text" }, [_vm._v("Admins")]),
-        _c("i", { staticClass: "kt-menu__ver-arrow la la-angle-right" })
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
       "li",
       {
-        staticClass: "kt-menu__item  kt-menu__item--parent",
-        attrs: { "aria-haspopup": "true" }
+        staticClass: "kt-menu__item  kt-menu__item--submenu",
+        attrs: {
+          "aria-haspopup": "true",
+          "data-ktmenu-submenu-toggle": "hover"
+        }
       },
       [
-        _c("span", { staticClass: "kt-menu__link" }, [
-          _c("span", { staticClass: "kt-menu__link-text" }, [_vm._v("Add")])
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "li",
-      { staticClass: "kt-menu__item ", attrs: { "aria-haspopup": "true" } },
-      [
-        _c("a", { staticClass: "kt-menu__link ", attrs: { href: "#" } }, [
-          _c(
-            "i",
-            { staticClass: "kt-menu__link-bullet kt-menu__link-bullet--dot" },
-            [_c("span")]
-          ),
-          _c("span", { staticClass: "kt-menu__link-text" }, [_vm._v("Payroll")])
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "li",
-      { staticClass: "kt-menu__item ", attrs: { "aria-haspopup": "true" } },
-      [
-        _c("a", { staticClass: "kt-menu__link ", attrs: { href: "#" } }, [
-          _c(
-            "i",
-            { staticClass: "kt-menu__link-bullet kt-menu__link-bullet--dot" },
-            [_c("span")]
-          ),
-          _c("span", { staticClass: "kt-menu__link-text" }, [
-            _vm._v("Contacts")
+        _c(
+          "a",
+          {
+            staticClass: "kt-menu__link kt-menu__toggle",
+            attrs: { href: "javascript:;" }
+          },
+          [
+            _c("i", { staticClass: "kt-menu__link-icon flaticon-layers" }),
+            _c("span", { staticClass: "kt-menu__link-text" }, [
+              _vm._v("Resources")
+            ]),
+            _c("i", { staticClass: "kt-menu__ver-arrow la la-angle-right" })
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "kt-menu__submenu " }, [
+          _c("span", { staticClass: "kt-menu__arrow" }),
+          _vm._v(" "),
+          _c("ul", { staticClass: "kt-menu__subnav" }, [
+            _c(
+              "li",
+              {
+                staticClass: "kt-menu__item  kt-menu__item--parent",
+                attrs: { "aria-haspopup": "true" }
+              },
+              [
+                _c("span", { staticClass: "kt-menu__link" }, [
+                  _c("span", { staticClass: "kt-menu__link-text" }, [
+                    _vm._v("Resources")
+                  ])
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              {
+                staticClass: "kt-menu__item ",
+                attrs: { "aria-haspopup": "true" }
+              },
+              [
+                _c(
+                  "a",
+                  { staticClass: "kt-menu__link ", attrs: { href: "#" } },
+                  [
+                    _c(
+                      "i",
+                      {
+                        staticClass:
+                          "kt-menu__link-bullet kt-menu__link-bullet--dot"
+                      },
+                      [_c("span")]
+                    ),
+                    _c("span", { staticClass: "kt-menu__link-text" }, [
+                      _vm._v("Layout inner")
+                    ])
+                  ]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              {
+                staticClass: "kt-menu__item ",
+                attrs: { "aria-haspopup": "true" }
+              },
+              [
+                _c(
+                  "a",
+                  { staticClass: "kt-menu__link ", attrs: { href: "#" } },
+                  [
+                    _c(
+                      "i",
+                      {
+                        staticClass:
+                          "kt-menu__link-bullet kt-menu__link-bullet--dot"
+                      },
+                      [_c("span")]
+                    ),
+                    _c("span", { staticClass: "kt-menu__link-text" }, [
+                      _vm._v("Timesheet")
+                    ])
+                  ]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              {
+                staticClass: "kt-menu__item ",
+                attrs: { "aria-haspopup": "true" }
+              },
+              [
+                _c(
+                  "a",
+                  { staticClass: "kt-menu__link ", attrs: { href: "#" } },
+                  [
+                    _c(
+                      "i",
+                      {
+                        staticClass:
+                          "kt-menu__link-bullet kt-menu__link-bullet--dot"
+                      },
+                      [_c("span")]
+                    ),
+                    _c("span", { staticClass: "kt-menu__link-text" }, [
+                      _vm._v("Payroll")
+                    ])
+                  ]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              {
+                staticClass: "kt-menu__item ",
+                attrs: { "aria-haspopup": "true" }
+              },
+              [
+                _c(
+                  "a",
+                  { staticClass: "kt-menu__link ", attrs: { href: "#" } },
+                  [
+                    _c(
+                      "i",
+                      {
+                        staticClass:
+                          "kt-menu__link-bullet kt-menu__link-bullet--dot"
+                      },
+                      [_c("span")]
+                    ),
+                    _c("span", { staticClass: "kt-menu__link-text" }, [
+                      _vm._v("Contacts")
+                    ])
+                  ]
+                )
+              ]
+            )
           ])
         ])
       ]
@@ -96086,40 +96178,6 @@ var staticRenderFns = [
                 )
               ]
             )
-          ])
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "li",
-      { staticClass: "kt-menu__item ", attrs: { "aria-haspopup": "true" } },
-      [
-        _c("a", { staticClass: "kt-menu__link ", attrs: { href: "#" } }, [
-          _c("i", { staticClass: "kt-menu__link-icon flaticon-light" }),
-          _c("span", { staticClass: "kt-menu__link-text" }, [
-            _vm._v("Administration")
-          ])
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "li",
-      { staticClass: "kt-menu__item ", attrs: { "aria-haspopup": "true" } },
-      [
-        _c("a", { staticClass: "kt-menu__link ", attrs: { href: "#" } }, [
-          _c("i", { staticClass: "kt-menu__link-icon flaticon-share" }),
-          _c("span", { staticClass: "kt-menu__link-text" }, [
-            _vm._v("Management")
           ])
         ])
       ]
@@ -117500,16 +117558,25 @@ var routes = [{
     },
     name: 'settings.index',
     children: [{
-      path: 'landing/',
+      path: 'landing',
       component: function component() {
         return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! @/views/settings/landing */ "./resources/js/admin/views/settings/landing/index.vue"));
       },
       children: [{
+        path: '/',
+        meta: {
+          layout: 'dashboard'
+        },
+        component: function component() {
+          return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! @/views/settings/landing/control */ "./resources/js/admin/views/settings/landing/control.vue"));
+        },
+        name: 'landing.control'
+      }, {
         path: 'create',
         component: function component() {
           return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! @/views/settings/landing/create */ "./resources/js/admin/views/settings/landing/create.vue"));
         },
-        name: 'landing.index'
+        name: 'landing.create'
       }]
     }]
   }, {
@@ -117527,6 +117594,7 @@ var routes = [{
       meta: {
         layout: 'dashboard'
       },
+      name: 'country.list',
       component: function component() {
         return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! @/views/country/list.vue */ "./resources/js/admin/views/country/list.vue"));
       }

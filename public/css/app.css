@@ -2,6 +2,25 @@
   display: none;
 }
 
+.logo-adhmn {
+  width: 95px;
+  margin-left: 37px;
+}
+
+.under-construction {
+  margin-bottom: 0 !important;
+  text-align: center;
+  padding-left: 44% !important;
+}
+
+.construction-content {
+  width: 170px;
+}
+
+.construction-content .flaticon-warning {
+  float: left;
+}
+
 .error-validate {
   color: red;
 }

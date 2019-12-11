@@ -2,11 +2,18 @@
     <div class="kt-portlet__head">
         <div class="kt-portlet__head-label">
             <h3 class="kt-portlet__head-title">
-                Base Controls
+                {{ title }}
             </h3>
         </div>
     </div>
 </template>
 <script>
-    export default {}
+    export default {
+        props: {
+            title: {
+                type: String,
+                required: true
+            }
+        }
+    }
 </script>

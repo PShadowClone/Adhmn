@@ -12,10 +12,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-// import page from '../../../components/page'
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'landing.index' // components: {page}
-
+  name: 'landing.vue'
 });
 
 /***/ }),

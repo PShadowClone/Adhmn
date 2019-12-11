@@ -1,5 +1,13 @@
 <template>
-    <div v-cloak>
+    <div class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed"
+         v-cloak>
+        <div class="alert alert-warning under-construction fade show" role="alert">
+            <div class="construction-content">
+                <i class="flaticon-warning"></i>
+                <div class="alert-text">Under construction !</div>
+            </div>
+
+        </div>
         <!-- begin:: Page -->
         <!-- begin:: Header Mobile -->
         <mobile-header></mobile-header>
@@ -7,7 +15,14 @@
         <div class="kt-grid kt-grid--hor kt-grid--root">
             <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
                 <!-- begin:: Aside -->
-                <v-nav></v-nav>
+                <button class="kt-aside-close " id="kt_aside_close_btn"><i class="la la-close"></i></button>
+
+                <div class="kt-aside  kt-aside--fixed  kt-grid__item kt-grid kt-grid--desktop kt-grid--hor-desktop"
+                     id="kt_aside">
+                    <!-- begin:: Aside -->
+                    <v-nav></v-nav>
+                    <!-- end:: Aside Menu -->
+                </div>
                 <!-- end:: Aside -->
                 <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper">
                     <!-- begin:: Header -->

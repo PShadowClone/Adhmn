@@ -18,13 +18,19 @@ export const routes = [
                 name: 'settings.index',
                 children: [
                     {
-                        path: 'landing/',
+                        path: 'landing',
                         component: () => import('@/views/settings/landing'),
                         children: [
                             {
+                                path: '/',
+                                meta: {layout: 'dashboard'},
+                                component: () => import('@/views/settings/landing/control'),
+                                name: 'landing.control',
+                            },
+                            {
                                 path: 'create',
                                 component: () => import('@/views/settings/landing/create'),
-                                name: 'landing.index',
+                                name: 'landing.create',
                             }
                         ]
                     }
@@ -40,6 +46,7 @@ export const routes = [
                     {
                         path: '/',
                         meta: {layout: 'dashboard'},
+                        name: 'country.list',
                         component: () => import('@/views/country/list.vue'),
                     }
                 ],

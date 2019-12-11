@@ -135,6 +135,7 @@ return [
     */
 
     'providers' => [
+        Core\Settings\Providers\SettingsServiceProvider::class,
         Core\Auth\Providers\AuthServiceProvider::class,
         Core\Country\Providers\CountryServiceProvider::class,
         Core\Admin\Providers\AdminServiceProvider::class,

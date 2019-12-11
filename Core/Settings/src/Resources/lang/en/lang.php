@@ -1,0 +1,10 @@
+<?php
+
+
+return [
+
+    /**
+     * Settings translations
+     */
+
+];

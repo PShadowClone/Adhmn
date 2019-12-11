@@ -51,6 +51,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'list.vue',
   data: function data() {
@@ -114,48 +117,57 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "kt-portlet" }, [
-    _vm._m(0),
-    _vm._v(" "),
-    _c("div", { staticClass: "kt-portlet__body" }, [
-      _c("div", { staticClass: "kt-section" }, [
-        _c("div", { staticClass: "kt-section__content" }, [
-          _c(
-            "div",
-            { staticClass: "table-responsive" },
-            [
-              _c("vue-good-table", {
-                attrs: {
-                  styleClass: "table table-bordered",
-                  columns: _vm.columns,
-                  rows: _vm.rows,
-                  "line-numbers": true
-                }
-              }),
-              _vm._v(" "),
-              _vm.currentPage
-                ? _c("b-pagination", {
+  return _c(
+    "div",
+    {
+      staticClass:
+        "kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid"
+    },
+    [
+      _c("div", { staticClass: "kt-portlet" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c("div", { staticClass: "kt-portlet__body" }, [
+          _c("div", { staticClass: "kt-section" }, [
+            _c("div", { staticClass: "kt-section__content" }, [
+              _c(
+                "div",
+                { staticClass: "table-responsive" },
+                [
+                  _c("vue-good-table", {
                     attrs: {
-                      "total-rows": _vm.total,
-                      "per-page": _vm.perPage,
-                      align: "right"
-                    },
-                    model: {
-                      value: _vm.currentPage,
-                      callback: function($$v) {
-                        _vm.currentPage = $$v
-                      },
-                      expression: "currentPage"
+                      styleClass: "table table-bordered",
+                      columns: _vm.columns,
+                      rows: _vm.rows,
+                      "line-numbers": true
                     }
-                  })
-                : _vm._e()
-            ],
-            1
-          )
+                  }),
+                  _vm._v(" "),
+                  _vm.currentPage
+                    ? _c("b-pagination", {
+                        attrs: {
+                          "total-rows": _vm.total,
+                          "per-page": _vm.perPage,
+                          align: "right"
+                        },
+                        model: {
+                          value: _vm.currentPage,
+                          callback: function($$v) {
+                            _vm.currentPage = $$v
+                          },
+                          expression: "currentPage"
+                        }
+                      })
+                    : _vm._e()
+                ],
+                1
+              )
+            ])
+          ])
         ])
       ])
-    ])
-  ])
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
@@ -165,7 +177,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "kt-portlet__head" }, [
       _c("div", { staticClass: "kt-portlet__head-label" }, [
         _c("h3", { staticClass: "kt-portlet__head-title" }, [
-          _vm._v("\n                Countries\n            ")
+          _vm._v("\n                    Countries\n                ")
         ])
       ])
     ])
