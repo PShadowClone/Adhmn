@@ -35,4 +35,15 @@ class Media extends Model
         return $this->morphTo();
     }
 
+    /**
+     * get the full path of image
+     *
+     * @return string
+     * @author Amr
+     */
+    function getPathAttribute()
+    {
+        return $this->attributes['path'] != null ? asset('storage/' . $this->attributes['path']) : $this->attributes['path'] ;
+    }
+
 }

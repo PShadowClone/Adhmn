@@ -803,7 +803,9 @@
   left: 7px;
   right: 7px;
   bottom: 7px;
-  text-align: center; }
+  text-align: center;
+  width: calc(100% - 14px);
+  height: calc(100% - 14px); }
 
 .uppy-ProviderBrowser-viewType--grid button.uppy-ProviderBrowserItem-inner:focus {
   outline: none;
@@ -901,7 +903,9 @@
 
 .uppy-ProviderBrowserItem-fakeCheckbox {
   position: relative;
-  cursor: pointer; }
+  cursor: pointer;
+  -ms-flex-negative: 0;
+  flex-shrink: 0; }
 
 .uppy-ProviderBrowserItem-fakeCheckbox:after {
   content: "";
@@ -1436,7 +1440,7 @@ svg.UppyIcon.retry {
   text-transform: uppercase; }
 
 .uppy-DashboardItem-sourceIcon {
-  display: inline-block;
+  display: none;
   vertical-align: bottom;
   color: #bbb; }
 

@@ -4,11 +4,11 @@
             <div class="kt-portlet__body">
                 <ul class="nav nav-pills" role="tablist">
                     <li class="nav-item ">
-                        <a class="nav-link " data-toggle="tab" href="#kt_tabs_3_1"><i class="la la-gear"></i>Common
-                            Settings</a>
+                        <a class="nav-link active " data-toggle="tab" href="#kt_tabs_3_1">
+                            <i class="flaticon-squares-4"></i>Slider</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#kt_tabs_3_3"><i
+                        <a class="nav-link" data-toggle="tab" href="#kt_tabs_3_3"><i
                                 class="la la-map-marker"></i>Link</a>
                     </li>
                     <li class="nav-item">
@@ -19,8 +19,8 @@
 
 
                 <div class="tab-content">
-                    <div class="tab-pane " id="kt_tabs_3_1" role="tabpanel">
-
+                    <div class="tab-pane active" id="kt_tabs_3_1" role="tabpanel">
+                        <slider/>
                     </div>
                     <div class="tab-pane" id="kt_tabs_3_2" role="tabpanel">
                         It has survived not only five centuries, but also the leap into electronic typesetting,
@@ -28,7 +28,7 @@
                         sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
                         Aldus PageMaker including versions of Lorem Ipsum.
                     </div>
-                    <div class="tab-pane active" id="kt_tabs_3_3" role="tabpanel">
+                    <div class="tab-pane " id="kt_tabs_3_3" role="tabpanel">
                         <form action="">
                             <div class="form-group">
                                 <label>Facebook</label>
@@ -58,7 +58,10 @@
     </page>
 </template>
 <script>
+    import Slider from './partials/slider'
+
     export default {
+        components: {Slider},
         data: () => {
             return {
                 title: 'Landing Page Controller',

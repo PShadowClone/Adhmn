@@ -6,6 +6,7 @@ require('./mixins/index')
 import Vue from 'vue'
 import router from './route/index'
 import App from './App.vue'
+import store from "./store/index";
 
 
 Vue.config.productionTip = false
@@ -20,7 +21,7 @@ window.vue = Vue;
  */
 new Vue({
     // el: '#app',
+    store,
     router,
-    render: h => h(App),
-    // template: `<App/>`
+    render: h => h(App)
 }).$mount('#app');

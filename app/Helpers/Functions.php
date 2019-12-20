@@ -54,3 +54,29 @@ if (!function_exists('query_method')) {
     }
 }
 
+if (!function_exists('load_resource_pagination')) {
+    /**
+     * this function is used to build new pagination structure
+     * to simplify the processing of response in the front end
+     *
+     * new structure
+     * response [
+     *      data => [],
+     *      paginator => {}
+     * ]
+     *
+     * @param $resourceClass
+     * @param \Illuminate\Pagination\LengthAwarePaginator $paginator
+     * @return mixed
+     * @author Amr
+     */
+    function load_resource_pagination(\Illuminate\Pagination\LengthAwarePaginator $paginator)
+    {
+        $data = $paginator->getCollection();
+        $result['data'] = $data;
+        $temp = $paginator->toArray();
+        unset($temp['data']);
+        $result['paginator'] = $temp;
+        return $result;
+    }
+}

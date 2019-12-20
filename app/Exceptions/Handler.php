@@ -3,6 +3,7 @@
 namespace App\Exceptions;
 
 use Exception;
+use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
@@ -50,6 +51,7 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+
         /**
          * check if the request was an api request
          * this step just for returning json response
@@ -63,7 +65,7 @@ class Handler extends ExceptionHandler
                 return response()->api(ERROR_RESPONSE, $errors->first(), $errors, VALIDATION_EXCEPTION);
             } else if ($exception instanceof ModelNotFoundException) {
                 return response()->api(ERROR_RESPONSE, trans('lang.resource_not_found'), [], RESOURCE_NOT_FOUND);
-            } else if ($exception instanceof AuthenticationException) {
+            } else if ($exception instanceof AuthenticationException || $exception instanceof AuthorizationException) {
                 return response()->api(ERROR_RESPONSE, trans('Auth::lang.unauthenticated'), [], UNAUTHENTICATED_ERROR);
             }
             return response()->api(ERROR_RESPONSE, $exception->getMessage(), [], $exception->getCode());

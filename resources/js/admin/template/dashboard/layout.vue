@@ -1,13 +1,5 @@
 <template>
-    <div class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed"
-         v-cloak>
-        <div class="alert alert-warning under-construction fade show" role="alert">
-            <div class="construction-content">
-                <i class="flaticon-warning"></i>
-                <div class="alert-text">Under construction !</div>
-            </div>
-
-        </div>
+    <div class="">
         <!-- begin:: Page -->
         <!-- begin:: Header Mobile -->
         <mobile-header></mobile-header>
@@ -15,14 +7,7 @@
         <div class="kt-grid kt-grid--hor kt-grid--root">
             <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
                 <!-- begin:: Aside -->
-                <button class="kt-aside-close " id="kt_aside_close_btn"><i class="la la-close"></i></button>
-
-                <div class="kt-aside  kt-aside--fixed  kt-grid__item kt-grid kt-grid--desktop kt-grid--hor-desktop"
-                     id="kt_aside">
-                    <!-- begin:: Aside -->
-                    <v-nav></v-nav>
-                    <!-- end:: Aside Menu -->
-                </div>
+                <v-nav></v-nav>
                 <!-- end:: Aside -->
                 <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper">
                     <!-- begin:: Header -->
@@ -33,9 +18,15 @@
                         <sub-header></sub-header>
                         <!-- end:: Subheader -->
                         <!-- begin:: Content -->
-                        <v-body></v-body>
+                        <div class="kt-container  kt-grid__item kt-grid__item--fluid">
+                            <!--Begin::Dashboard 3-->
+                            <loader :show="loaderDisable"/>
+                            <router-view/>
+                            <!--End::Dashboard 3-->
+                        </div>
                         <!-- end:: Content -->
                     </div>
+
                     <!-- begin:: Footer -->
                     <v-footer></v-footer>
                     <!-- end:: Footer -->
@@ -46,33 +37,26 @@
         <!-- begin::Quick Panel -->
         <quick-panel></quick-panel>
         <!-- end::Quick Panel -->
-        <!-- begin::Scrolltop -->
-        <scroll-top></scroll-top>
-        <!-- end::Scrolltop -->
+        <!-- begin::Sticky Toolbar -->
+        <toolbar></toolbar>
+        <!-- end::Sticky Toolbar -->
+
         <!--Begin:: Chat-->
         <chat></chat>
         <!--ENd:: Chat-->
-
     </div>
+
 </template>
 <script>
-    import components from './components'
+    import components from './partials/component'
+    import {mapGetters, mapState} from "vuex";
 
     export default {
-        name: "layout.vue",
-        components
+        components,
+        computed: {
+            ...mapState({
+                loaderDisable: state => state.Loader.loaderDisable,
+            }),
+        }
     }
 </script>
-<style lang="scss">
-    [v-cloak] {
-        display: none;
-    }
-
-    @import "/css/app.css";
-    @import "/assets/vendors/general/@fortawesome/fontawesome-free/css/all.min.css";
-    @import "/assets/vendors/custom/vendors/flaticon2/flaticon.css";
-    @import "/assets/vendors/custom/vendors/flaticon/flaticon.css";
-    @import "/assets/vendors/general/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.css";
-
-
-</style>

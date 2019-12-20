@@ -24,6 +24,8 @@
 
     <!-- Custom styles for this template -->
     <link href="{{asset('landing-assets/css/agency.min.css')}}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="{{asset('landing-assets/css/agency.css')}}" rel="stylesheet">
 
 </head>
 

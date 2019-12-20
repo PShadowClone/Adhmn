@@ -1,8 +1,9 @@
 <template>
     <div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
         <div class="kt-portlet">
+
             <!-- START HEADER @AUTHOR AMR-->
-            <v-header :title="title"></v-header>
+            <v-header :title="title" :actionUrl="actionUrl" :mainUrl="mainUrl"></v-header>
             <!-- END HEADER @AUTHOR AMR-->
             <!-- START BODY @AUTHOR AMR-->
             <v-body>
@@ -10,8 +11,7 @@
             </v-body>
             <!-- END BODY @AUTHOR AMR-->
             <!-- START FOOTER @AUTHOR AMR-->
-            <v-footer v-if="showFooter" >
-            </v-footer>
+            <v-footer v-if="showFooter"></v-footer>
             <!-- END FOOTER @AUTHOR AMR-->
 
         </div>
@@ -34,6 +34,14 @@
             title: {
                 type: String,
                 required: true
+            },
+            actionUrl: {
+                required: true,
+                type: String
+            },
+            mainUrl: {
+                required: true,
+                type: String
             }
         },
         /**

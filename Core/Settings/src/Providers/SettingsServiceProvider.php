@@ -2,7 +2,9 @@
 
 namespace Core\Settings\Providers;
 
+use Core\Settings\Interfaces\LandingPageInterface;
 use Core\Settings\Interfaces\SliderInterface;
+use Core\Settings\Repository\LandingPageRepository;
 use Core\Settings\Repository\SliderRepository;
 use Illuminate\Support\Facades\Route;
 use \Illuminate\Support\ServiceProvider;
@@ -34,12 +36,21 @@ class SettingsServiceProvider extends ServiceProvider
          * @author Amr
          */
         $this->app->singleton(SliderInterface::class, SliderRepository::class);
+        /*
+        * bind landing's interface with landing repository
+         *
+        * @author Amr
+        */
+        $this->app->singleton(LandingPageInterface::class, LandingPageRepository::class);
+
+
+
     }
 
 
     public function register()
     {
-
+        Route::pattern('landing', '[0-9]+');
     }
 
     /**

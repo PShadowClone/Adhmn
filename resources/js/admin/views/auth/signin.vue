@@ -64,6 +64,7 @@
         },
         methods: {
             submit() {
+                let _this = this;
                 this.validate((result) => {
                     if (result) {
                         this.request(this.methods.POST, this.endpoints.auth.login, this.form, (result) => {
@@ -75,9 +76,7 @@
                             this.showAlert = false;
                             this.alertMessage = ''
                             window.storageManager.setStorage(result)
-                            this.$router.push({name: 'home'})
-                        }, () => {
-                        }, () => {
+                            window.location.href = '/admin/settings/landing/list'
                         })
                     }
                 })

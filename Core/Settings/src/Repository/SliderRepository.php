@@ -7,6 +7,7 @@ namespace Core\Settings\Repository;
 use Core\Settings\Interfaces\SliderInterface;
 use Core\Settings\Models\Slider;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 /**
  * Class SliderRepository
@@ -31,6 +32,7 @@ class SliderRepository implements SliderInterface
     public function __construct(Slider $slider)
     {
         $this->slider = $slider;
+
     }
 
     /**
@@ -79,7 +81,11 @@ class SliderRepository implements SliderInterface
      */
     public function store(Request $request)
     {
-        // TODO: Implement store() method.
+        $path = $request->file('image')->store('images');
+        $data['content'] = $request->input('content');
+        $slider = $this->slider->create($data);
+        $slider->image()->create(['path' => $path]);
+        return $slider;
     }
 
     /**
@@ -92,7 +98,18 @@ class SliderRepository implements SliderInterface
      */
     public function update(Request $request, $id)
     {
-        // TODO: Implement update() method.
+        $slider = $this->find($id);
+        $slider->content = $request->input('content');
+        $slider->update();
+        if (!$request->hasFile('image')) {
+            return;
+        }
+        $oldPath = $slider->image->path;//->delete();
+        $slider->image()->delete();
+        $path = $request->file('image')->store('images');
+        Storage::disk('public')->delete($oldPath);
+        $slider->image()->create(['path' => $path]);
+        return $this->find($id);
     }
 
     /**
@@ -104,6 +121,8 @@ class SliderRepository implements SliderInterface
      */
     public function delete($id)
     {
-        // TODO: Implement delete() method.
+        $slider = $this->find($id);
+        $slider->delete();
+        return $slider;
     }
 }

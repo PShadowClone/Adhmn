@@ -31,6 +31,10 @@ class Slider extends Model
      * @var array
      */
     protected $dates = ['created_at', 'updated_at', 'deleted_at'];
+    /**
+     * @var array
+     */
+    protected $with = ['image'];
 
     /**
      * sliders's images
@@ -39,6 +43,6 @@ class Slider extends Model
      */
     public function image()
     {
-        return $this->morphMany(Media::class, 'mediaable');
+        return $this->morphOne(Media::class, 'media');
     }
 }

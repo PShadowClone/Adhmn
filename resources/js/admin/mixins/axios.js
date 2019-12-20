@@ -1,4 +1,5 @@
 import instance, {axiosEndpoints, axiosMethods} from '@/axios'
+import {mapActions, mapState} from "vuex";
 
 /**
  * this mixin is used to handel componnets' requests
@@ -10,24 +11,29 @@ export default {
     data: () => {
         return {
             endpoints: {},
-            methods: {}
+            methods: {},
+            requestHeader: {}
         }
     },
     methods: {
+        ...mapActions('Loader', [
+            'showLoader',
+            'hideLoader',
+        ]),
         request(method, url, param, then, catchMethod = null, finallyMethod = null) {
+            this.showLoader();
+            let _this = this;
             let axiosInstance = null;
-            switch (method) {
-                case 'get':
-                    axiosInstance = instance.get(url).then(({data}) => {
-                        then(data);
-                    });
-                    break;
-                case 'post':
-                    instance.post(url, param).then(({data}) => {
-                        then(data)
-                    });//.catch(catchMethod).finally(finallyMethod);
-                    break;
-            }
+            return instance[method](url, param, this.requestHeader).then(({data}) => {
+                _this.hideLoader();
+                if (data.status == 200)
+                    then(data)
+
+            }).catch(catchMethod).finally(catchMethod || this.onFinally);
+        },
+        onFinally(data) {
+            //called if finally callback not exists
+            this.hideLoader();
         }
     },
     /**

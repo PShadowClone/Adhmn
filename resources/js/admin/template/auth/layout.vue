@@ -27,7 +27,7 @@
         name: 'layout.app',
         data: () => {
             return {
-                backgroundImage:''
+                backgroundImage: ''
             };
         }
     }

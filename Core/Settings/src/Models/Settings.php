@@ -13,7 +13,7 @@ class Settings extends Model
      *
      * @var string
      */
-    protected $table = 'settingss';
+    protected $table = 'settings';
 
     /**
      * table's primary key

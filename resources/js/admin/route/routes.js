@@ -8,8 +8,7 @@ export const routes = [
             {
                 path: '/',
                 component: () => import('@/views/settings/index'),
-                meta: {layout: 'dashboard'},
-                name: 'home',
+                name: 'homes',
                 beforeEnter: authenticate,
             },
             {
@@ -23,9 +22,18 @@ export const routes = [
                         children: [
                             {
                                 path: '/',
-                                meta: {layout: 'dashboard'},
                                 component: () => import('@/views/settings/landing/control'),
                                 name: 'landing.control',
+                            },
+                            {
+                                path: 'list',
+                                component: () => import('@/views/settings/landing/list'),
+                                name: 'landing.list',
+                            },
+                            {
+                                path: 'update/:id',
+                                component: () => import('@/views/settings/landing/update'),
+                                name: 'landing.update',
                             },
                             {
                                 path: 'create',
@@ -39,13 +47,11 @@ export const routes = [
             {
                 path: 'country/',
                 component: () => import('@/views/country/index'),
-                name: 'country.index',
                 meta: {layout: 'dashboard'},
                 beforeEnter: authenticate,
                 children: [
                     {
                         path: '/',
-                        meta: {layout: 'dashboard'},
                         name: 'country.list',
                         component: () => import('@/views/country/list.vue'),
                     }
@@ -54,8 +60,9 @@ export const routes = [
             {
                 path: 'login',
                 name: 'login',
+                meta: {layout: 'auth'},
                 component: () => import('@/views/auth/signin'),
-                meta: {layout: 'auth'}
+
             }
         ]
     },

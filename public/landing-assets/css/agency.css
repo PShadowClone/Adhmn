@@ -126,7 +126,9 @@ img::-moz-selection {
   color: #fed136;
   font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
-
+#mainNav .navbar-brand img{
+  margin-left: -15px;
+}
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
   color: #fec503;
 }
@@ -221,7 +223,27 @@ header.masthead .intro-text .intro-heading {
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   }
 }
-
+@media (min-width: 320px) and (max-width: 768px){
+  .about_logo{
+    height: 66px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .about_logo{
+    height: 87px !important;
+  }
+}
+@media (min-width: 991px) and (max-width: 1199px){
+  .about_logo{
+    height: 136px !important;
+  }
+}
+@media (min-width: 1199px){
+  .about_logo{
+    height: 157px !important;
+    width: 157px !important;
+  }
+}
 .service-heading {
   margin: 15px 0;
   text-transform: none;
@@ -585,10 +607,9 @@ header.masthead .intro-text .intro-heading {
 }
 
 section#contact {
-  background-color: #212529;
-  background-image: url("../img/map-image.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../img/IMG_0208 copy.jpg") no-repeat center;
+  background-size: cover;
+  opacity: 0.85;
 }
 
 section#contact .section-heading {
@@ -681,3 +702,38 @@ ul.social-buttons li a {
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #fed136;
 }
+
+/*///////////////////*/
+#services .carousel-inner .carousel-item .row{
+  margin-left: 100px !important;
+  margin-bottom: 70px;
+}
+#services .carousel-inner .carousel-item .row img{
+  width: 130px !important;
+  margin-left: 50px;
+}
+#services .carousel-inner .carousel-item .row .img_15{
+  width: 190px !important;
+  margin-left: 50px;
+}
+#services .carousel-inner .carousel-item .row p{
+  text-align: center;
+  margin-right: 60px;
+}
+
+/*///////////////////*/
+#ourPartner .items{
+}
+#ourPartner .portfolio-item img{
+  width: 150px;
+  height: 130px;
+  margin-left: 95px;
+}
+#ourPartner .portfolio-item .portfolio-caption h4{
+  text-align: center;
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+

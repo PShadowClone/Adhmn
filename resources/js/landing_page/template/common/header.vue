@@ -1,16 +1,32 @@
 <template>
-    <header class="masthead">
+    <!-- Header -->
+    <header class="masthead" :style="`background-image : url('${showImage(slider)}')`">
         <div class="container">
             <div class="intro-text">
-
                 <div class="intro-lead-in"><font color="#8ee2dd"></font></div>
-                <div class="intro-heading text-uppercase"><font color="#8ee2dd">مرحبا بكم في اضمن</font></div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">اخبرني
-                    بالمزيد</a>
             </div>
         </div>
     </header>
 </template>
 <script>
-    export default {}
+    export default {
+        props: ['slider'],
+        data() {
+            return {
+                last: {}
+            }
+        },
+        computed: {
+            localSlider() {
+                console.log("children", this.slider.no)
+                return this.slider;
+            }
+        },
+
+        methods: {
+            showImage(slider) {
+                return slider.children[slider.children.length - 1].image.path
+            }
+        }
+    }
 </script>

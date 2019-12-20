@@ -1,1 +1,2 @@
 require('./validate')
+require('./sweetAlert')
